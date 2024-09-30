@@ -1,0 +1,47 @@
+.trending-tags {
+  display: flex;
+  flex-direction: column;
+
+  .tag-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-item {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tag-item.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.tag-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trending-tags {
+    width: 100%;
+    overflow-x: auto;
+    padding-right: 0;
+  }
+
+  .tags-list {
+    justify-content: center;
+  }
+}
