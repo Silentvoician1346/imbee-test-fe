@@ -129,8 +129,6 @@ const App = () => {
         {/* Search Bar Component */}
         <SearchBar searchInputValue={""} handleChangeSearch={throttledHandleChangeSearch} />
         {/* Trending Tags Component */}
-        {stateQuestions.length} - {pageRef.current} - {stateIsFetchingQuestion.toString()} -{" "}
-        {stateIsFetchingTags.toString()} - {selectedTag}
         <TrendingTags
           tags={stateTags}
           selectedTag={selectedTag}
