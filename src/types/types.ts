@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from "react";
-
 export interface Owner {
   profile_image: string;
   display_name: string;
@@ -36,7 +34,7 @@ export interface TrendingTagsProps {
   isFetchingTags: boolean;
 }
 
-export interface FetchQuestionsParams {
+export interface QuestionSearchParams {
   tag?: string;
   page?: number;
 }

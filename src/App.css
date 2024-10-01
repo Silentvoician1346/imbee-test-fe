@@ -23,6 +23,8 @@
   }
 }
 .skeleton {
+  display: flex;
+  justify-content: center;
   padding-block: 32px;
 }
 /* Responsive Design */
